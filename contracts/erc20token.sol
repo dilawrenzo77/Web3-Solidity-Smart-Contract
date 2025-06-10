@@ -47,6 +47,6 @@ contract Lawrence is ERC20 {
 
     //we get the token balances of various accounts
     function getBalance(address _owner) public view returns (uint){
-        return _balances[_owner];
+        return balanceOf(_owner);
     }
 }
